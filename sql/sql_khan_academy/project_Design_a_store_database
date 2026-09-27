@@ -1,0 +1,35 @@
+create table store (id integer,name text,type_of text,num_of_units integer,unit_price numeric)
+;
+
+insert into store (id,name,type_of,num_of_units,unit_price) values (1,"a","clothing",10,20);
+insert into store (id,name,type_of,num_of_units,unit_price) values (2,"b","clothing",15,30);
+
+insert into store (id,name,type_of,num_of_units,unit_price) values (3,"c","clothing",11,30);
+
+insert into store (id,name,type_of,num_of_units,unit_price) values (4,"d","clothing",12,30);
+
+insert into store (id,name,type_of,num_of_units,unit_price) values (5,"e","clothing",13,30);
+insert into store (id,name,type_of,num_of_units,unit_price) values (6,"f","clothing",10,20);
+insert into store (id,name,type_of,num_of_units,unit_price) values (7,"g","clothing",15,30);
+
+insert into store (id,name,type_of,num_of_units,unit_price) values (8,"h","clothing",11,30);
+
+insert into store (id,name,type_of,num_of_units,unit_price) values (9,"i","clothing",12,30);
+
+insert into store (id,name,type_of,num_of_units,unit_price) values (10,"j","clothing",13,30);
+
+insert into store (id,name,type_of,num_of_units,unit_price) values (11,"k","clothing",10,20);
+insert into store (id,name,type_of,num_of_units,unit_price) values (12,"l","clothing",15,30);
+
+insert into store (id,name,type_of,num_of_units,unit_price) values (13,"m","clothing",11,30);
+
+insert into store (id,name,type_of,num_of_units,unit_price) values (14,"n","clothing",12,30);
+
+insert into store (id,name,type_of,num_of_units,unit_price) values (15,"o","clothing",13,30);
+
+
+select * from store
+order by unit_price;
+
+select type_of,sum(num_of_units) from store
+group by type_of;
